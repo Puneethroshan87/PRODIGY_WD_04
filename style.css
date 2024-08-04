@@ -1,0 +1,79 @@
+/* Add this to your existing CSS code */
+
+/* Make the weather data container responsive */
+#weather-data {
+    width: 80%; /* Change the width to a percentage value */
+    max-width: 400px; /* Add a maximum width to prevent it from getting too wide */
+    margin: 40px auto; /* Add a margin to center it horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    gap: 20px;
+    border: transparent;
+    color: beige;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+  }
+  
+
+  #background-video {
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  /* Make the input field and button responsive */
+  input[type="text"] {
+    width: 80%; /* Change the width to a percentage value */
+    max-width: 300px; /* Add a maximum width to prevent it from getting too wide */
+    padding: 10px;
+    margin: 10px auto; /* Add a margin to center it horizontally */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 80%; 
+    max-width: 300px; 
+    padding: 10px;
+    margin: 10px auto; 
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    #weather-data {
+      width: 90%;
+      max-width: 300px;
+    }
+    input[type="text"] {
+      width: 90%;
+      max-width: 250px;
+    }
+    button {
+      width: 90%;
+      max-width: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #weather-data {
+      width: 95%;
+      max-width: 250px;
+    }
+    input[type="text"] {
+      width: 95%;
+      max-width: 200px;
+    }
+    button {
+      width: 95%;
+      max-width: 200px;
+    }
+  }
